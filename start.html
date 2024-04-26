@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1><a href="index.html">Number Guessing Game</a></h1>
+    <div class="randomNumber">
+      <p id="randomNumber"></p>
+    </div>
+    <div class="form">
+      <form method="post" action="/submit_form" autocomplete="off">
+        <label> Enter your guess:- </label><br />
+        <input
+          id="number-only"
+          type="text"
+          maxlength="2"
+          placeholder="Your guess here..."
+          autocomplete="off"
+        />
+        <p id="hint"></p>
+        <p>
+          Guessed Numbers: <br />
+          <span id="wrongNumbersDisplay"></span>
+        </p>
+      </form>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div class="resultMessageDiv">
+        <p id="resultMessage"></p>
+        <p id="displayNumber"></p>
+        <button id="againButton"></button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
